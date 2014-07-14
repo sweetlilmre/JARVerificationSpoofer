@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JAR Verification Spoofer</string>
+    <string name="app_description">Spoofs JAR verification when installing APK files etc.</string>
+    <string name="app_settings">Settings</string>
+    <string name="enable_spoof">Enable verification spoof</string>
+</resources>

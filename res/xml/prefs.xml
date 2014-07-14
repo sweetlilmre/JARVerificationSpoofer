@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/app_settings">
+        <CheckBoxPreference android:title="@string/enable_spoof" android:key="enable_spoof" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
