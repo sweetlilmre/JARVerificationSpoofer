@@ -26,7 +26,8 @@ public class JarVerificationSpoofer implements IXposedHookZygoteInit {
 				JarVerificationSpoofer.this._prefs.makeWorldReadable();
 				JarVerificationSpoofer.this._prefs.reload();
 				
-				if (JarVerificationSpoofer.this._prefs.getBoolean("enable_spoof", true)) {
+				// start with spoof DISABLED!
+				if (JarVerificationSpoofer.this._prefs.getBoolean("enable_spoof", false)) {
 					XposedBridge.log("JAR verification spoof enabled");
 					String name = (String) XposedHelpers.getObjectField(param.thisObject, "name");
 					Certificate[] certificates = (Certificate[]) XposedHelpers.getObjectField(param.thisObject, "certificates");
